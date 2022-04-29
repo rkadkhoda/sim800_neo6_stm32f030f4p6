@@ -1,0 +1,27 @@
+--cpu Cortex-M0
+"neo6_uart\startup_stm32f030x6.o"
+"neo6_uart\main.o"
+"neo6_uart\stm32f0xx_it.o"
+"neo6_uart\stm32f0xx_hal_msp.o"
+"neo6_uart\stm32f0xx_hal_tim.o"
+"neo6_uart\stm32f0xx_hal_tim_ex.o"
+"neo6_uart\stm32f0xx_hal_uart.o"
+"neo6_uart\stm32f0xx_hal_uart_ex.o"
+"neo6_uart\stm32f0xx_hal_rcc.o"
+"neo6_uart\stm32f0xx_hal_rcc_ex.o"
+"neo6_uart\stm32f0xx_hal.o"
+"neo6_uart\stm32f0xx_hal_i2c.o"
+"neo6_uart\stm32f0xx_hal_i2c_ex.o"
+"neo6_uart\stm32f0xx_hal_gpio.o"
+"neo6_uart\stm32f0xx_hal_dma.o"
+"neo6_uart\stm32f0xx_hal_cortex.o"
+"neo6_uart\stm32f0xx_hal_pwr.o"
+"neo6_uart\stm32f0xx_hal_pwr_ex.o"
+"neo6_uart\stm32f0xx_hal_flash.o"
+"neo6_uart\stm32f0xx_hal_flash_ex.o"
+"neo6_uart\stm32f0xx_hal_exti.o"
+"neo6_uart\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "neo6_uart\neo6_uart.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "neo6_uart.map" -o neo6_uart\neo6_uart.axf
