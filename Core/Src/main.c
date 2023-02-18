@@ -186,7 +186,7 @@ int main(void)
   while (1)
   {
 	//https://www.google.com/maps/place/35%C2%B044'49.0%22N+51%C2%B032'29.2%22E/
-	//35°44'48.6"N 51°32'29.4"E
+	//35°44'48.6"N 51°32'29.4"E 
 	
 		if (neo_flag==1){
 			neo_flag=0;
